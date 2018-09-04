@@ -24,6 +24,7 @@ public class Department implements Serializable{
     private Date startDate;
     @Column(name = "administrator")
     private Integer administrator;
+
     @OneToMany(mappedBy = "department")
     private Set<Course> courses;
 }
